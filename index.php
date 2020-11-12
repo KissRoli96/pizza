@@ -3,6 +3,7 @@
 include 'core/database/DbConnection.php';
 include 'core/User.php';
 include 'core/ViewUser.php';
+include 'head.php';
 
 ?>
 
@@ -19,3 +20,8 @@ include 'core/ViewUser.php';
 ?>
 </body>
 </html>
+
+
+<?php
+include 'footer.php';
+?>
