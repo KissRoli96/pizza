@@ -1,0 +1,22 @@
+
+
+h1 {
+    font-size: 42px;
+}
+
+.main {
+    background: aliceblue;
+}
+
+.even {
+    background: cadetblue;
+}
+
+.table, td, tr {
+    border-color: black;
+    border: 2px;
+}
+
+#odd {
+    color: brown;
+}
