@@ -3,8 +3,10 @@
 require_once 'core/database/DbConnection.php';
 require_once 'core/User.php';
 require_once 'core/Pizza.php';
+require_once 'core/Drink.php';
 require_once 'core/ViewUser.php';
 require_once 'core/ViewPizza.php';
+require_once 'core/ViewDrink.php';
 require_once 'head.php';
 
 ?>

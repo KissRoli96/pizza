@@ -11,13 +11,13 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link " href="/pizzaoop/">Italok</a>
+                    <a class="nav-link " href="/pizzaoop/index.php?page=drinks">Italok</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="/pizzaoop/index.php?page=users" tabindex="-1" aria-disabled="true">Rendelések</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="connenction.php" tabindex="-1" aria-disabled="true">Kapcsolat</a>
+                    <a class="nav-link " href="/pizzaoop/index.php?page=relationship" tabindex="-1" aria-disabled="true">Kapcsolat</a>
                 </li>
             </ul>
         </div>

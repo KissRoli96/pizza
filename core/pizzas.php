@@ -1,34 +1,30 @@
+<?php
+        $pizzas = new ViewPizza();
+?>
 
-<div class="main">
-    <div class="starter-template" >
-        <h1>Pizzak</h1>
-
-        <table style="width:100%" class="table">
-            <tr>
-                <th>Pizza ID</th>
-                <th>Pizza</th>
-                <th>Meret</th>
-                <th>Ár</th>
-                <?php
-                $pizzas = new ViewPizza();
-                $pizzas->showAllPizzas();
-                ?>
-
-            </tr>
-
-            <tr>
-
-            </tr>
-
-            <tr>
-
-            </tr>
-
-        </table>
-
-        <br>
-    </div>
-
+<div class="container">
+<table class="table table-striped table-dark">
+    <thead>
+    <tr>
+        <th scope="col">Pizza ID</th>
+        <th scope="col">Pizza</th>
+        <th scope="col">Ár</th>
+        <th scope="col">Méret</th>
+    </tr>
+    </thead>
+    <?php
+    foreach ($pizzas->showAllPizzas() as $pizza){
+    ?>
+    <tbody>
+    <tr>
+        <th scope="row"><?= $pizza['id'] ?></th>
+        <th ><?= $pizza['pizzanev'] ?></th>
+        <th><?= $pizza['ar'] ?></th>
+        <th><?= $pizza['meret'] . " cm" ?></th>
+    </tr>
+    </tbody>
+    <?php
+    }
+    ?>
+</table>
 </div>
-
-
