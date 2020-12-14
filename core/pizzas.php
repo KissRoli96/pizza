@@ -19,7 +19,7 @@
     <tr>
         <th scope="row"><?= $pizza['id'] ?></th>
         <th ><?= $pizza['pizzanev'] ?></th>
-        <th><?= $pizza['ar'] ?></th>
+        <th><?= $pizza['ar'] . " HUF" ?></th>
         <th><?= $pizza['meret'] . " cm" ?></th>
     </tr>
     </tbody>

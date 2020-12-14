@@ -5,6 +5,7 @@ require_once 'core/models/Model.php';
 require_once 'core/models/User.php';
 require_once 'core/models/Pizza.php';
 require_once 'core/models/Drink.php';
+require_once 'core/models/Hamburger.php';
 require_once 'head.php';
 require_once 'core/functions.php';
 

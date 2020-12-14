@@ -15,6 +15,10 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="<?= generateViewUrl('hamburgers') ?>">Hamburgerek</a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link " href="<?= generateViewUrl('drinks') ?>">Italok</a>
                 </li>
                 <li class="nav-item">
