@@ -18,7 +18,7 @@ class DbConnection
     }
 
 
-    protected function connect()
+    public function connect()
     {
 
         $conn = new mysqli($this->servername,$this->username,$this->password,$this->database);

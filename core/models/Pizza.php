@@ -1,11 +1,11 @@
 <?php
 
-class Pizza extends DbConnection
+class Pizza extends Model
 {
     public function getAllPizzas()
     {
         $sql = "SELECT * FROM pizza";
-        $result = $this->connect()->query($sql);
+        $result = $this->db->connect()->query($sql);
         $numRows = $result->num_rows;
 
         if($numRows > 0) {

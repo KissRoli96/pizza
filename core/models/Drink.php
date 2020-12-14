@@ -1,12 +1,12 @@
 <?php
 
-class Drink extends DbConnection
+class Drink extends Model
 {
     public function getAllDrinks()
     {
 
             $sql = "SELECT * FROM drink";
-            $result = $this->connect()->query($sql);
+            $result = $this->db->connect()->query($sql);
             $numRows = $result->num_rows;
 
             if($numRows > 0) {
@@ -17,5 +17,6 @@ class Drink extends DbConnection
             }
 
     }
+
 
 }
