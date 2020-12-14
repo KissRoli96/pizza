@@ -3,7 +3,7 @@
         <h1>Kapcsolat</h1>
             <p>06 90 654 4560 </p>
 
-        <br>
+        <br/>
     </div>
 
 </div>
