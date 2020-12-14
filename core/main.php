@@ -9,7 +9,7 @@ $pizzas = [
                 5000 ft
                 asdasdadsda",
                 "picture" => [
-                        "src" => "/pizzaoop/core/pictures/main.jpg",
+                        "src" => "/pizzaoop/pictures/main.jpg",
                         "alt" => "kep leiras 1"
                         ]
             ],
@@ -18,7 +18,7 @@ $pizzas = [
                 "desc" => "Masik pizza
                 buzi kelcsi",
                 "picture" => [
-                        "src" => "/pizzaoop/core/pictures/main2.jpg",
+                        "src" => "/pizzaoop/pictures/main2.jpg",
                         "alt" => "kep leiras 2"
                          ]
             ],
@@ -26,7 +26,7 @@ $pizzas = [
                 "title" => "Pizza 3",
                 "desc" => " Arulo buzi senki szar ERESZ",
                 "picture" => [
-                        "src" => "/pizzaoop/core/pictures/main3.jpg",
+                        "src" => "/pizzaoop/pictures/main3.jpg",
                         "alt" => "kep leiras 3"
 
                         ]
@@ -36,7 +36,7 @@ $pizzas = [
                 "title" => "Pizza 4",
                 "desc" => "Ez a 4 undorito szar pizza",
                 "picture" => [
-                        "src" => "/pizzaoop/core/pictures/main4.jpg",
+                        "src" => "/pizzaoop/pictures/main4.jpg",
                         "alt" => "kep leiras 4"
 
                         ]

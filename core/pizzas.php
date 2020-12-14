@@ -1,5 +1,5 @@
 <?php
-        $pizzas = new ViewPizza();
+        $pizzas = new Pizza();
 ?>
 
 <div class="container">
@@ -13,7 +13,7 @@
     </tr>
     </thead>
     <?php
-    foreach ($pizzas->showAllPizzas() as $pizza){
+    foreach ($pizzas->getAllPizzas() as $pizza){
     ?>
     <tbody>
     <tr>

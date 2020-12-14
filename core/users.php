@@ -1,5 +1,5 @@
 <?php
-$users = new ViewUser();
+$users = new User();
 ?>
 <div class="container">
 <table class="table table-striped table-dark">
@@ -11,7 +11,7 @@ $users = new ViewUser();
     </tr>
     </thead>
     <?php
-    foreach ($users->showAllusers() as $user){
+    foreach ($users->getAllusers() as $user){
         ?>
         <tbody>
         <tr>

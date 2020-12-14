@@ -1,5 +1,5 @@
 <?php
-$drinks = new ViewDrink();
+$drinks = new Drink();
 ?>
 
 <div class="container">
@@ -13,7 +13,7 @@ $drinks = new ViewDrink();
     </tr>
     </thead>
     <?php
-    foreach ($drinks->showAllDrinks() as $drink){
+    foreach ($drinks->getAllDrinks() as $drink){
         ?>
         <tbody>
         <tr>

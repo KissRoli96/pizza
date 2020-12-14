@@ -2,7 +2,7 @@
 
 class User extends  DbConnection
 {
-    protected function getAllusers()
+    public function getAllusers()
     {
         $sql = "SELECT * FROM user";
         $result = $this->connect()->query($sql);

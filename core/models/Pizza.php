@@ -2,7 +2,7 @@
 
 class Pizza extends DbConnection
 {
-    protected function getAllPizzas()
+    public function getAllPizzas()
     {
         $sql = "SELECT * FROM pizza";
         $result = $this->connect()->query($sql);

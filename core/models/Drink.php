@@ -2,7 +2,7 @@
 
 class Drink extends DbConnection
 {
-    protected function getAllDrinks()
+    public function getAllDrinks()
     {
 
             $sql = "SELECT * FROM drink";
