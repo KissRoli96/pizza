@@ -18,8 +18,4 @@ class Drink extends DbConnection
 
     }
 
-
-
-
-
 }

@@ -1,5 +1,8 @@
 <?php
-$drinks = new Drink();
+
+$db = require_once 'core/database/config.php';
+
+$drinks = new Drink($db);
 ?>
 
 <div class="container">

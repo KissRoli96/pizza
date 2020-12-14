@@ -1,6 +1,5 @@
 <?php
 
-
 class DbConnection
 {
     private $servername;
@@ -8,12 +7,19 @@ class DbConnection
     private $password;
     private $database;
 
-    protected function connect() {
-        $this->servername = "localhost";
-        $this->username = "root";
-        $this->password = "";
-        $this->database = "pizzaoop";
+    public function __construct($db)
+    {
+        $this->servername = $db['servername'];
+        $this->username = $db['username'];
+        $this->password = $db['password'];
+        $this->database = $db['database'];
 
+
+    }
+
+
+    protected function connect()
+    {
 
         $conn = new mysqli($this->servername,$this->username,$this->password,$this->database);
 
