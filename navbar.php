@@ -25,6 +25,9 @@
                     <a class="nav-link " href="<?= generateViewUrl('users') ?>" tabindex="-1" aria-disabled="true">Rendelések</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link " href="<?= generateViewUrl('login') ?>" tabindex="-1" aria-disabled="true">Bejelentkezés</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link " href="<?= generateViewUrl('relationship') ?>" tabindex="-1" aria-disabled="true">Kapcsolat</a>
                 </li>
             </ul>
