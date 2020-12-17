@@ -2,6 +2,9 @@
 
 class User extends Model
 {
+    public $username;
+    public $pwd;
+
     public function getAllusers()
     {
         $sql = "SELECT * FROM user";
@@ -14,5 +17,14 @@ class User extends Model
             }
             return $data;
         }
+    }
+
+    public function insert()
+    {
+
+        $sql = "INSERT INTO user (username,pwd) VALUES ( '$this->username','$this->pwd') ";
+        $result = $this->db->connect()->query($sql);
+
+        return $result;
     }
 }

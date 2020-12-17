@@ -24,9 +24,9 @@ require_once 'navbar.php';
     <?php
 
         if (!isset($_GET['page'])) {
-            require_once "core/main.php";
+            require_once "core/views/main.php";
         } elseif (!empty($_GET['page'])) {
-            require_once "core/" . $_GET['page'] . ".php";
+            require_once "core/views/" . $_GET['page'] . ".php";
         }
 
     ?>
