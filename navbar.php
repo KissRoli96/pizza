@@ -33,6 +33,9 @@
                 <li class="nav-item">
                     <a class="nav-link " href="<?= generateViewUrl('relationship') ?>" tabindex="-1" aria-disabled="true">Kapcsolat</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="<?= generateViewUrl('logout') ?>" tabindex="-1" aria-disabled="true">Kijelentkezés</a>
+                </li>
             </ul>
         </div>
     </div>

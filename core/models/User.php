@@ -27,4 +27,19 @@ class User extends Model
 
         return $result;
     }
+
+    public function login()
+    {
+        $sql = "SELECT `username`,`pwd` FROM `user` WHERE username = '$this->username' AND pwd = '$this->pwd'";
+        $result = $this->db->connect()->query($sql);
+        $numRows = $result->num_rows;
+
+        if ($numRows >0) {
+                while ($row = $result->fetch_assoc()) {
+                    $data[] = $row;
+                }
+                return  $data;
+        }
+
+    }
 }

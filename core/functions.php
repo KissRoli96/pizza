@@ -35,3 +35,21 @@ function checkRegisterValidation($username, $password)
     return true;
 }
 
+/**
+ * @param $username
+ * @param $password
+ * @return bool
+ */
+function checkLoginValidation($username, $password)
+{
+    if (empty($username) or strlen($username) < 6 ) {
+        return false;
+    }
+
+    if (empty($password) or strleN($password) < 6) {
+        return  false;
+    }
+
+    return true;
+}
+
