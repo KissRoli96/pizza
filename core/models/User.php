@@ -21,7 +21,7 @@ class User extends Model
 
     public function insert()
     {
-
+        $this->pwd = crypt($this->pwd);
         $sql = "INSERT INTO user (username,pwd) VALUES ( '$this->username','$this->pwd') ";
         $result = $this->db->connect()->query($sql);
 
@@ -33,7 +33,6 @@ class User extends Model
         $sql = "SELECT `username`,`pwd` FROM `user` WHERE username = '$this->username' AND pwd = '$this->pwd'";
         $result = $this->db->connect()->query($sql);
         $numRows = $result->num_rows;
-
         if ($numRows >0) {
                 while ($row = $result->fetch_assoc()) {
                     $data[] = $row;
@@ -41,5 +40,5 @@ class User extends Model
                 return  $data;
         }
 
-    }
+   }
 }
