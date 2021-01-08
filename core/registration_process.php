@@ -19,13 +19,11 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
          if ($user->insert()) {
              //redirect sikeres regisztracio megfelelo kijelzese
-             header('Location: http://localhost/' . generateViewUrl('registration'));
              $_SESSION['flash']['success'] = 'Regisztráció sikeres,Üdvözüljük '. $user->username .' !';
-             exit();
+             redirect('registration');
          }
     }
 }
-header('Location: http://localhost/' . generateViewUrl('registration'));
 $_SESSION['flash']['error'] = 'A regisztració nem sikerült, kerlek adj meg helyes adatokat!';
-exit();
+redirect('registration');
 // vissza irányitjuk , hogy javítson az adatokon.

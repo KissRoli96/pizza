@@ -53,3 +53,9 @@ function checkLoginValidation($username, $password)
     return true;
 }
 
+function redirect($page)
+{
+
+    header('Location: http://localhost/' . generateViewUrl($page));
+    exit();
+}
