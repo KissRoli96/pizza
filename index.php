@@ -22,7 +22,6 @@ require_once 'navbar.php';
 <div class="main">
 
     <?php
-    var_dump($_SESSION);
         if (!isset($_GET['page'])) {
             require_once "core/views/main.php";
         } elseif (!empty($_GET['page'])) {
