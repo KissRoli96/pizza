@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once 'core/database/DbConnection.php';
 require_once 'core/models/Model.php';
 require_once 'core/models/User.php';
@@ -22,7 +22,7 @@ require_once 'navbar.php';
 <div class="main">
 
     <?php
-
+    var_dump($_SESSION);
         if (!isset($_GET['page'])) {
             require_once "core/views/main.php";
         } elseif (!empty($_GET['page'])) {

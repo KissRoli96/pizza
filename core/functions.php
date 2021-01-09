@@ -18,7 +18,7 @@ function generateViewUrl($page)
  * @param $password
  * @return bool
  */
-function checkRegisterValidation($username, $password)
+function validateRegisterForm($username, $password)
 {
 
     // validalasi szabalyok

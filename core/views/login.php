@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 if (isset($_SESSION['flash'])) {
     if (isset($_SESSION['flash']['success'])) {

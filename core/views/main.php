@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $pizzas = [
         0 => [
                 "title" => "Pizza 1",
@@ -65,17 +63,16 @@ if (isset($_SESSION['flash'])) {
               Welcome
             </h1>
             <?php
-            if (isset($_SESSION['username']) or isset($_SESSION['password'])) {
-                echo "<h3>Felhasznalo Neve: </h3>";
-                echo $_SESSION['username'] . "<br>";
-                echo $_SESSION['password'];
-            } else {
-                echo "<p>Nem vagy bejelentkezve kerlek jelenkezbe </p>";
-                ?>
-                <a href="<?= generateViewUrl('login') ?>">bejelentkezes </a>
-            <?php
-            }
-            ?>
+//            if (isset($_SESSION['username'])) {
+//                echo "<h3>Felhasznalo Neve: </h3>";
+//                echo $_SESSION['username'] . "<br>";
+//            } else {
+//                echo "<p>Nem vagy bejelentkezve kerlek jelenkezbe </p>";
+//                ?>
+<!--                <a href="--><?//= generateViewUrl('login') ?><!--">bejelentkezes </a>-->
+<!--            --><?php
+//            }
+//            ?>
         </div>
 
         <div class="col-md-6 col-xs-12">

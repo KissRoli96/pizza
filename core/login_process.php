@@ -15,19 +15,10 @@ if ((isset($_POST['username'])) && (isset($_POST['password']))) {
         $user->pwd = $password;
 
 
-
       if ($user->login()) {
-        foreach ($user->login() as $user) {
-
-            if ($password == $user['pwd'] and $username == $user['username']) {
-
-                $_SESSION['username'] = $username;
-                $_SESSION['password'] = $password;
-
+                var_dump($_SESSION);
                 $_SESSION['flash']['success'] = "Sikeres bejelentkezés!";
                 redirect('main');
-            }
-        }
    }
     $_SESSION['flash']['error'] = "hibás adatok nem jó!";
     redirect('login');

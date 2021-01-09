@@ -27,15 +27,31 @@
                 <li class="nav-item">
                     <a class="nav-link " href="<?= generateViewUrl('registration') ?>" tabindex="-1" aria-disabled="true">Regisztráció</a>
                 </li>
-                <li class="nav-item">
+                <?php
+
+                if (!isset($_SESSION['username'])) {
+                    ?>
+                    <li class="nav-item">
                     <a class="nav-link " href="<?= generateViewUrl('login') ?>" tabindex="-1" aria-disabled="true">Bejelentkezés</a>
+                    </li>
+
+                <?php
+                } else {
+                    ?>
+                    <li class="nav-item">
+                    <a class="nav-link " href="<?= generateViewUrl('logout') ?>" tabindex="-1" aria-disabled="true">Kijelentkezés</a>
                 </li>
+                <?php
+                }
+                ?>
+
                 <li class="nav-item">
                     <a class="nav-link " href="<?= generateViewUrl('relationship') ?>" tabindex="-1" aria-disabled="true">Kapcsolat</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="<?= generateViewUrl('logout') ?>" tabindex="-1" aria-disabled="true">Kijelentkezés</a>
-                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link " href="--><?//= generateViewUrl('logout') ?><!--" tabindex="-1" aria-disabled="true">Kijelentkezés</a>-->
+<!--                </li>-->
+
             </ul>
         </div>
     </div>
