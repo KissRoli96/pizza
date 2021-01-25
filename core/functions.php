@@ -59,3 +59,11 @@ function redirect($page)
     header('Location: http://localhost/' . generateViewUrl($page));
     exit();
 }
+
+function isGuest()
+{
+    if (!isset($_SESSION['username'])) {
+        return true;
+    }
+        return false;
+}

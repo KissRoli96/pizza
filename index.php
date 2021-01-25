@@ -9,8 +9,6 @@ require_once 'core/models/Hamburger.php';
 require_once 'head.php';
 require_once 'core/functions.php';
 
-
-
 ?>
 
 <body>

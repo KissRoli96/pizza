@@ -14,17 +14,13 @@ class DbConnection
         $this->password = $db['password'];
         $this->database = $db['database'];
 
-
     }
 
 
     public function connect()
     {
-
         $conn = new mysqli($this->servername,$this->username,$this->password,$this->database);
-
         return $conn;
-
     }
 
 }

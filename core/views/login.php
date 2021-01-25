@@ -1,5 +1,9 @@
 <?php
 
+if (!isGuest()) {
+    redirect('main');
+}
+
 if (isset($_SESSION['flash'])) {
     if (isset($_SESSION['flash']['success'])) {
         echo "<div class='list-group-item list-group-item-action list-group-item-success'>" . $_SESSION['flash']['success'] . "</div>";

@@ -62,17 +62,7 @@ if (isset($_SESSION['flash'])) {
             <h1>
               Welcome
             </h1>
-            <?php
-//            if (isset($_SESSION['username'])) {
-//                echo "<h3>Felhasznalo Neve: </h3>";
-//                echo $_SESSION['username'] . "<br>";
-//            } else {
-//                echo "<p>Nem vagy bejelentkezve kerlek jelenkezbe </p>";
-//                ?>
-<!--                <a href="--><?//= generateViewUrl('login') ?><!--">bejelentkezes </a>-->
-<!--            --><?php
-//            }
-//            ?>
+
         </div>
 
         <div class="col-md-6 col-xs-12">

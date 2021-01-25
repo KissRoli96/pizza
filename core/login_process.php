@@ -16,9 +16,11 @@ if ((isset($_POST['username'])) && (isset($_POST['password']))) {
 
 
       if ($user->login()) {
-                var_dump($_SESSION);
+
                 $_SESSION['flash']['success'] = "Sikeres bejelentkezés!";
                 redirect('main');
+
+
    }
     $_SESSION['flash']['error'] = "hibás adatok nem jó!";
     redirect('login');
