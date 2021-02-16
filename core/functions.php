@@ -23,13 +23,13 @@ function validateRegisterForm($username, $password)
 
     // validalasi szabalyok
     if (empty($username) or strlen($username) < 6) {
-        $_SESSION['flash']['error'] = 'Hibas username, kerlek figyelj oda !';
+        $_SESSION['flash']['error'] = 'Invalid username!';
 
         return false;
     }
 
     if (empty($password) or strlen($password) < 6) {
-        $_SESSION['flash']['error'] = 'Hibas pwd, kerlek figyelj oda !';
+        $_SESSION['flash']['error'] = 'Invalid password!';
         return false;
     }
     return true;

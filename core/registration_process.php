@@ -19,11 +19,11 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
          if ($user->insert()) {
              //redirect sikeres regisztracio megfelelo kijelzese
-             $_SESSION['flash']['success'] = 'Regisztráció sikeres,Üdvözüljük '. $user->username .' !';
+             $_SESSION['flash']['success'] = 'Registration successful,welcome'. $user->username .' !';
              redirect('registration');
          }
     }
 }
-$_SESSION['flash']['error'] = 'A regisztració nem sikerült, kerlek adj meg helyes adatokat!';
+$_SESSION['flash']['error'] = 'Registration failed, please enter the correct information!';
 redirect('registration');
 // vissza irányitjuk , hogy javítson az adatokon.

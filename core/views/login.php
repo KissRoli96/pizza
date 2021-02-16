@@ -16,6 +16,10 @@ if (isset($_SESSION['flash'])) {
 }
 ?>
 
+<div>
+    <h3>Login</h3>
+</div>
+
 <div class="container">
 
     <form action="/pizzaoop/core/login_process.php" method="post" >

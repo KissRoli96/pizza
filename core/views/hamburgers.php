@@ -8,8 +8,8 @@ $hamburgers = new Hamburger();
         <tr>
             <th scope="col">Hamburger ID</th>
             <th scope="col">Hamburger</th>
-            <th scope="col">Ár</th>
-            <th scope="col">Méret</th>
+            <th scope="col">Price</th>
+            <th scope="col">Size</th>
         </tr>
         </thead>
         <?php

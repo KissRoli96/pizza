@@ -1,48 +1,5 @@
 <?php
 
-$pizzas = [
-        0 => [
-                "title" => "Pizza 1",
-                "desc" => " Leiras:
-                asdasdasdadasdasd
-                30 cm
-                5000 ft
-                asdasdadsda",
-                "picture" => [
-                        "src" => "/pizzaoop/pictures/main.jpg",
-                        "alt" => "kep leiras 1"
-                        ]
-            ],
-        1 => [
-                "title" => "Pizza 2",
-                "desc" => "Masik pizza
-                buzi kelcsi",
-                "picture" => [
-                        "src" => "/pizzaoop/pictures/main2.jpg",
-                        "alt" => "kep leiras 2"
-                         ]
-            ],
-        2 => [
-                "title" => "Pizza 3",
-                "desc" => " Arulo buzi senki szar ERESZ",
-                "picture" => [
-                        "src" => "/pizzaoop/pictures/main3.jpg",
-                        "alt" => "kep leiras 3"
-
-                        ]
-
-            ],
-        3 => [
-                "title" => "Pizza 4",
-                "desc" => "Ez a 4 undorito szar pizza",
-                "picture" => [
-                        "src" => "/pizzaoop/pictures/main4.jpg",
-                        "alt" => "kep leiras 4"
-
-                        ]
-            ]
-
-];
 
 if (isset($_SESSION['flash'])) {
     if (isset($_SESSION['flash']['success'])) {
@@ -55,39 +12,39 @@ if (isset($_SESSION['flash'])) {
     unset($_SESSION['flash']);
 }
 
+$pizzas = new Pizza();
+echo $pizzas->getAllPizzas();
 ?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Pizzeria -- Kiss Roland</title>
+</head>
+<body>
+
+<div>
+    <h1 class="display-3">Pizzeria</h1>
+</div>
+
+<p>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur earum eius error laudantium magni minus modi officiis repellat. Dolore est hic ipsam labore nihil nulla obcaecati odit placeat quaerat repellat.</span><span>A aliquam assumenda beatae distinctio ducimus est eum, exercitationem hic impedit ipsum iste laboriosam maxime neque nesciunt nisi optio quae quas quibusdam, quidem saepe, sapiente sint totam ullam voluptate voluptates!</span>
+</p>
+
 <div class="container">
     <div class="row">
-        <div class="col-md-6 col-xs-12">
-            <h1>
-              Welcome
-            </h1>
-
+        <div class="col">
+            <img class="picture" src="pictures/main.jpg" alt="pizza1">
+            <p>pizza 1</p>
         </div>
-
-        <div class="col-md-6 col-xs-12">
-
-
-    </div>
-
-    <div class="row">
-        <?php
-            foreach ($pizzas as $pizza) {
-        ?>
-                <div class="col-md-3 col-xs-6">
-            <h3>
-               <?php
-               echo $pizza['title'];
-               ?>
-                </h3>
-            <img class="img-fluid" src="<?= $pizza['picture']['src']   ?>"  alt="<?= $pizza['picture']['alt'] ?>">
-            <p>
-                <?= $pizza['desc'] ?>
-                </p>
+        <div class="col">
+            <p>Pizza 2</p>
         </div>
-        <?php
-       }
-        ?>
-
+        <div class="w-100"></div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
     </div>
 </div>
+
+</body>
+</html>

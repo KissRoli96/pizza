@@ -9,8 +9,8 @@ $drinks = new Drink();
     <tr>
         <th scope="col">Ital ID</th>
         <th scope="col">Ital</th>
-        <th scope="col">Ár</th>
-        <th scope="col">Kiszerelés</th>
+        <th scope="col">Price</th>
+        <th scope="col">Packaging</th>
     </tr>
     </thead>
     <?php

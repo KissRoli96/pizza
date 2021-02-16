@@ -8,8 +8,8 @@
     <tr>
         <th scope="col">Pizza ID</th>
         <th scope="col">Pizza</th>
-        <th scope="col">Ár</th>
-        <th scope="col">Méret</th>
+        <th scope="col">Price</th>
+        <th scope="col">Size</th>
     </tr>
     </thead>
     <?php
